@@ -1,0 +1,229 @@
+@charset "UTF-8";
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  /*FONTS*/
+  --font-text: "Poppins", sans-serif;
+
+  /*COLORS*/
+  --button-color: #2acfcf;
+  --back-menu-color: #3b3054;
+  --input-error-color: #f46262;
+  --footer-title-color: #bfbfbf;
+  --text-color: #9e9aa7;
+  --title-color: #35323e;
+  --back-footer-color: #232127;
+
+  /*ACCESSIBILITY*/
+  font-size: 62, 5%;
+}
+
+body {
+  font-family: var(--font-text);
+}
+
+/*LOGO*/
+#img-logo {
+  position: relative;
+  top: 2rem;
+  left: 2rem;
+  width: 25%;
+}
+
+/*HAMBURGUER MENU*/
+nav {
+  display: flex;
+  justify-content: space-between;
+  margin: 4rem;
+  margin-bottom: 4rem;
+}
+
+#menu {
+  z-index: 2;
+  border-radius: 1rem;
+}
+
+#menu-bar {
+  width: 4.5rem;
+  height: 4rem;
+  margin: 6rem 4rem 0 2rem;
+  position: relative;
+  left: 13rem;
+  top: -5rem;
+}
+.bar {
+  height: 0.15rem;
+  width: 30%;
+  background-color: var(--text-color);
+  display: block;
+  transition: 0.3s ease; /*time to change the button form*/
+}
+
+#bar1 {
+  transform: translateY(-5px);
+}
+
+#bar3 {
+  transform: translateY(5px);
+}
+
+.nav {
+  display: none;
+  background-color: var(--back-menu-color);
+  transition: 0.3s ease;
+  padding: 1rem;
+  width: 14rem;
+  position: relative;
+  top: -11rem;
+  left: -3.2rem;
+  border-radius: 0.5rem;
+}
+
+.nav ul {
+  height: 15rem;
+}
+
+.nav li {
+  list-style: none;
+  text-align: center;
+  padding-top: 0.5rem;
+  padding-bottom: 0.7rem;
+}
+
+.nav li a {
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.nav li a:hover {
+  color: var(--button-color);
+}
+
+.menu-bg {
+  z-index: 1;
+  margin: 3rem 0 2rem 2rem;
+  background-color: var(--footer-title-color);
+  transition: 0.3s ease;
+}
+
+.change {
+  display: block;
+}
+
+.change .bar {
+  background-color: var(--text-color);
+}
+
+.change #bar1 {
+  transform: translateY(1px) rotateZ(-45deg);
+}
+
+.change #bar2 {
+  opacity: 0;
+}
+
+.change #bar3 {
+  transform: translateY(-4px) rotateZ(45deg);
+}
+
+#line {
+  background-color: var(--footer-title-color);
+  height: 0.07px;
+  opacity: 0.2;
+  width: 15rem;
+  margin: auto;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+/*BUTTON*/
+button {
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+  background-color: var(--button-color);
+  padding: 0.5rem 5rem;
+  border-radius: 2rem;
+  border: none;
+}
+
+button:hover {
+  background-color: var(--back-footer-color);
+}
+
+#sign-up {
+  position: relative;
+  top: 0rem;
+  left: 0.5rem;
+  margin: auto;
+}
+
+@media (min-width: 20rem) {
+  #menu-bar {
+    left: 18.5rem;
+    top: -5.5rem;
+  }
+
+  .nav {
+    width: 19.3rem;
+  }
+
+  #line {
+    width: 18rem;
+  }
+
+  #sign-up {
+    left: 3rem;
+  }
+}
+
+@media (min-width: 22rem) {
+  .nav {
+    left: -2.9rem;
+  }
+}
+
+@media (min-width: 24rem) {
+  .nav {
+    left: -2.9rem;
+  }
+}
+@media (min-width: 25rem) {
+  .nav {
+    left: -2.9rem;
+  }
+}
+
+@media (min-width: 28rem) {
+  .nav {
+    left: -1.2rem;
+  }
+
+  #img-logo {
+    top: 2.5rem;
+    left: 3rem;
+    width: 15%;
+  }
+
+  #menu-bar {
+    left: 21rem;
+    top: -5.3rem;
+  }
+}
+
+@media (min-width: 49rem) {
+  .nav {
+    left: -0.5rem;
+  }
+  #menu-bar {
+    left: 23rem;
+  }
+}
