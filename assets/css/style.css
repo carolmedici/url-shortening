@@ -19,6 +19,7 @@
   --text-color: #9e9aa7;
   --title-color: #35323e;
   --back-footer-color: #232127;
+  --aside-color: rgba(211, 210, 210, 0.734);
 
   /*ACCESSIBILITY*/
   font-size: 62, 5%;
@@ -50,12 +51,12 @@ nav {
 }
 
 #menu-bar {
-  width: 4.5rem;
+  width: 4rem;
   height: 4rem;
-  margin: 6rem 4rem 0 2rem;
+  
   position: relative;
-  left: 13rem;
-  top: -5rem;
+  left: 14rem;
+  top: 0.7rem;
 }
 .bar {
   height: 0.15rem;
@@ -80,7 +81,7 @@ nav {
   padding: 1rem;
   width: 14rem;
   position: relative;
-  top: -11rem;
+  top: -5rem;
   left: -3.2rem;
   border-radius: 0.5rem;
 }
@@ -166,10 +167,187 @@ button:hover {
   margin: auto;
 }
 
+#working-img {
+  width: 90%;
+  position: absolute;
+  top: 4em;
+  right: 0rem;
+  z-index: -1;
+}
+
+section {
+  padding: 0 1rem;
+  
+}
+
+h1 {
+  text-align: center;
+  margin: auto;
+  position: absolute;
+  top: 17rem;
+  z-index: -1;
+  color: var(--title-color);
+  font-weight: 700;
+  line-height: 1.6rem;
+}
+
+section p {
+  position: absolute;
+  top: 21rem;
+  text-align: center;
+  color: var(--text-color);
+  padding-right: 1rem;
+  font-size: 0.9rem;
+  z-index: -1;
+}
+
+.start-button {
+  position: absolute;
+  top: 26rem;
+  left: 4rem;
+  margin-bottom: 2rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+input {
+  position: absolute;
+  top: 32rem;
+  left: 1.7rem;
+  width: 80%;
+  height: 2rem;
+  border-radius: 0.5rem;
+  
+}
+
+#shorten-button {
+  position: absolute;
+  top: 35.5rem;
+  margin-bottom: 2rem;
+  left: 1.9rem;
+  border-radius: 0.2rem;
+  padding: 0.5em 4.3rem;
+   border-radius: 0.5rem;
+  
+}
+
+#shorten-button:hover {
+  background-color: var(--back-footer-color);
+}
+
+.shorten-link {
+  background-image: url("/assets/images/bg-shorten-mobile.svg");
+  background-repeat: no-repeat;
+  background-position-x: 300%;
+  background-position-y: 150%;
+  z-index: 0;
+  border-radius: 0.5rem;
+  position: absolute;
+  top: 31rem;
+  left: 0.8rem;
+  background-color: var(--back-menu-color);
+  width: 16rem;
+  height: 8rem;
+}
+
+aside {
+  padding: 0 1rem;
+  text-align: center;
+  background-color: var(--aside-color);
+  position: relative;
+  z-index: -1;
+  
+}
+
+h2 {
+  position: relative;
+  padding-top: 5rem;
+  margin-top: 30rem;
+  color: var(--title-color);
+}
+
+aside p {
+  color: var(--text-color);
+  font-size: 0.8rem;
+  padding-top: 0.5rem;
+}
+
+.icon-img {
+  background-color: var(--back-menu-color);
+  width: 5rem;
+  padding: 1rem 0;
+  border-radius: 50rem;
+  margin: auto;
+  margin-top: 2rem;
+  position: relative;
+  top: 2rem;
+}
+
+h3 {
+  padding-top: 1rem;
+}
+
+#square,
+#square2,
+#square3 {
+  background-color: white;
+  padding: 2.5rem 1rem 1rem 1rem;
+  border-radius: 0.3rem;
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+}
+
+#boost {
+  background-image: url("/assets/images/bg-boost-mobile.svg");
+  height: 12rem;
+  background-repeat: no-repeat;
+  background-position-x: 82%;
+  background-position-y: 52%;
+
+  background-color: var(--back-menu-color);
+}
+
+h4 {
+  color: white;
+  padding-top: 4rem;
+  font-size: 1.1rem;
+}
+
+#start2 {
+  top: 117rem;
+}
+
+footer {
+  padding-top: 2rem;
+  color: white;
+  background-color: var(--back-footer-color);
+  text-align: center;
+}
+
+h5 {
+  padding: 2rem 0 1rem 0;
+  font-size: 1rem;
+}
+
+footer ul li {
+  color: var(--text-color);
+  padding-bottom: 0.5rem;
+  font-size: 0.9rem;
+}
+
+#social-medias{
+  padding: 3rem 3.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+}
+/*//////////////////////////////*/
+
 @media (min-width: 20rem) {
   #menu-bar {
-    left: 18.5rem;
-    top: -5.5rem;
+    left: 19.5rem;
+    top: 0.5rem;
   }
 
   .nav {
@@ -183,6 +361,36 @@ button:hover {
   #sign-up {
     left: 3rem;
   }
+
+  h1{
+    margin-top: 5rem;
+  }
+
+  section p{
+    margin-top: 3rem;
+  }
+
+  .start-button{
+    margin: 3rem;
+  } 
+  .shorten-link {
+    margin-top: 2rem;
+    width: 22rem;
+
+  }
+
+  input{
+    margin-top: 3rem;
+    width: 85%
+  }
+
+  #shorten-button{
+    margin-top: 2rem;
+    width: 85%;
+  }
+
+  
+
 }
 
 @media (min-width: 22rem) {
@@ -200,11 +408,15 @@ button:hover {
   .nav {
     left: -2.9rem;
   }
+  #working-img {
+    width: 70%;
+    left: 5rem;
+  }
 }
 
 @media (min-width: 28rem) {
   .nav {
-    left: -1.2rem;
+    left: 20.8rem;
   }
 
   #img-logo {
@@ -214,16 +426,16 @@ button:hover {
   }
 
   #menu-bar {
-    left: 21rem;
+    left: 42rem;
     top: -5.3rem;
   }
 }
 
 @media (min-width: 49rem) {
   .nav {
-    left: -0.5rem;
+    left: 22rem;
   }
   #menu-bar {
-    left: 23rem;
+    left: 43rem;
   }
 }
