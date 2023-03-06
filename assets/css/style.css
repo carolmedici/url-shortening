@@ -46,8 +46,41 @@ nav {
 }
 
 #menu {
-  z-index: 2;
+ 
   border-radius: 1rem;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 11px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.767);
+}
+
+.close {
+  color: white;
+  position: absolute;
+  left: 13.5rem;
+  top: 0.2rem;
+  font-size: 3rem;
+  font-weight: normal;
+  display: flex;
+
+
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+  
 }
 
 #menu-bar {
@@ -78,14 +111,14 @@ nav {
 }
 
 .nav {
-  display: none;
+  display: block;
   background-color: var(--back-menu-color);
   transition: 0.3s ease;
   padding: 1rem;
   width: 14rem;
   position: relative;
-  top: -5rem;
-  left: -3.2rem;
+  top: 0rem;
+  left: -2.8rem;
   border-radius: 0.5rem;
 }
 
@@ -118,29 +151,7 @@ nav {
   transition: 0.3s ease;
 }
 
-.change {
-  display: block;
-}
 
-.change .bar {
-  background-color: var(--text-color);
-  margin-right: -1rem;
-}
-
-.change #bar1 {
-  transform: translateY(1px) rotateZ(-45deg);
-  margin-right: -1rem;
-}
-
-.change #bar2 {
-  opacity: 0;
-  margin-right: -1rem;
-}
-
-.change #bar3 {
-  transform: translateY(-4px) rotateZ(45deg);
-  margin-right: -1rem;
-}
 
 #line {
   background-color: var(--footer-title-color);
@@ -335,6 +346,11 @@ h5 {
 footer ul li {
   padding-bottom: 0.5rem;
   font-size: 0.9rem;
+
+}
+
+footer li{
+  list-style: none;
 }
 
 footer ul li a {
@@ -417,6 +433,9 @@ footer ul li a:hover {
   #shorten-button {
     left: 2.2rem;
   }
+  .close{
+    left: 19rem;
+  }
 }
 
 @media (min-width: 375px) {
@@ -434,7 +453,10 @@ footer ul li a:hover {
   #shorten-button {
     left: 2rem;
   }
-
+.close{
+  left: 19rem;
+    top: 0.3rem;
+}
   #square,
   #square2,
   #square3 {
@@ -449,6 +471,7 @@ footer ul li a:hover {
 }
 
 /*/////////////////////////////////////////////////////*/
+
 @media (min-width: 390px) {
   .shorten-link {
     width: 23rem;
@@ -471,6 +494,10 @@ footer ul li a:hover {
   .nav {
     left: -1.5rem;
   }
+
+  #menu-bar {
+    left: 21.5rem;
+  }
   #working-img {
     width: 90%;
     left: 2.5rem;
@@ -489,11 +516,31 @@ footer ul li a:hover {
   aside {
     width: 105%;
   }
+
+#boost{
+  width: 23.9rem;
 }
+
+aside {
+  width: 24rem;
+}
+h1{
+  left: 2.5rem;
+}
+.close {
+  left: 21rem;
+}
+  
+}
+
+
+
+/*///////////////////////////////////////////////////////*/
 
 @media (min-width: 700px) {
   .nav {
-    left: 20.8rem;
+    left: 18.8rem;
+    top: -1rem;
   }
 
   #img-logo {
@@ -604,31 +651,130 @@ footer ul li a:hover {
   }
 }
 
+
+@media (min-width: 750px){
+  #boost {
+    width: 47.9rem;
+}
+}
+
 @media (min-width: 800px){
+  .nav{
+  width: 27.3rem;
+    height: 20rem;
+    left: 11rem;
+    
+    
+}
+#sign-up {
+  left: 5.9rem;
+  font-size: 1.5rem;
+}
+
+.close {
+    left: 41rem;
+}
+
+.nav li a{
+  font-size: 1.5rem;
+}
+
+  .shorten-link {
+  width: 45rem;
+  margin-top: 20rem;
+  margin: auto;
+  position: relative;
+  top: 41rem;
+  }
+
+  input {
+    position: relative;
+    top: 31.5rem;
+    /* margin: auto; */
+    left: 4.2rem;
+    width: 42rem;
+}
+
+#shorten-button {
+  top: 30.5rem;
+  position: relative;
+  width: 42rem;
+  left: 4.2rem;
+}
+
+.start-button {
+  position: relative;
+  left: 14rem;
+  top: 39rem;
+}
+
+h1 {
+  margin-top: 24rem;
+  left: 12rem;
+}
+
+section p {
+  top: 43rem;
+  
+  margin: 2rem 3rem;}
+
+  aside {
+    top: -4rem;}
+
+
+  #boost {
+    background-position-x: 98%;
+    background-position-y: 18%;
+
+
+    width: 49.9rem;
+}
+
+#start2 {
+  top: -2rem;
+  left: 0.2rem;
+}
+
+footer {
+  margin-top: -4.2rem;
+}
 
 }
 
-@media (min-width: 850px){
+
+
+@media (min-width: 900px){
 
   body{
-    background-color: #232127
+    background-color: black;
   }
   
 main{
   max-width: 110rem;
   background-color:white;
   margin: 0 auto;
+  z-index: -2;
+  height: 159rem;
+  
 }
 #img-logo{
   top: 4rem;
   left: 14rem;
-  width: 8%;
+  width: 8rem;
 }
 
 .nav{
   display: block;
   background-color: transparent;
  
+}
+
+.modal{
+  display: block;
+  background-color: transparent;
+  position: relative;
+  top: -4.7rem;
+    left: 12rem;
 }
 
 .nav ul li a{ 
@@ -650,7 +796,7 @@ main{
   display: flex;
   position: relative;
   top: -4.1rem;
-  left: 58rem;
+  left: 48rem;
   
 }
 #sign-up {
@@ -671,40 +817,47 @@ section{
 }
 
 #working-img {
+  position: relative;
   width: 45rem;
   grid-column-start: 2;
-  left: -16rem;
-  top: -17rem;
+  left: -18rem;
+    top: -22rem;
   
 }
 
 h1{
+  position: relative;
   grid-column-start: 1;
   z-index: 0;
-  top: -32rem;
+  top: -75rem;
   font-size: 6rem;
   width: 50rem;
   line-height: 6rem;
-  left: 13rem;
+  left: -3.5rem;
   text-align: left;
  
 }
 
 section p{
+  position: relative;
   grid-column-start: 1;
-  top: -0rem;
+  top: -75rem;
   font-size: 1.8rem;
   width: 45rem;
   text-align: left;
-  left: 11rem;
+  left: 10rem;
   
 }
 
 .start-button{
-  top: 7.5rem;
+  position: relative;
+  top: -67.5rem;
   font-size: 1.6rem;
   padding: 1.2rem 3rem;
-  left: 11rem;
+  left: -72.5rem;
+
+
+  
 }
 
 
@@ -712,13 +865,10 @@ section p{
 .shorten-link {
   
   position: relative;
-  width: 80rem;
+  width: 82rem;
   height: 12rem;
- 
-  margin-top: -11rem;
-  margin-left: auto;
-  margin-right: auto;
-  
+  margin-top: -98rem;
+  left: 13rem;
   background-image: url('/assets/images/bg-boost-desktop.svg');
  
   background-position-x: 44%;
@@ -726,17 +876,163 @@ section p{
 }
 
 input {
-  top: 20.5rem;
-  left: 4rem;
-  width: 56%;
+  top: -56.5rem;
+  left: 17rem;
+  width: 62rem;
   height: 4rem;
 }
 
 #shorten-button {
-  top: 21.5rem;
-  width: 12%;
-  left: 66.9rem;
-  padding: 1.5rem;
+  top: -55.5rem;
+    width: 12rem;
+    position: relative;
+    left: -2.1rem;
+    padding: 1.5rem 0rem;
+}
+
+
+aside{
+  top: -83rem;
+  z-index: 0;
+  width: 98.1%;
+  height: 87rem;
+}
+
+h2 {
+  font-size: 3rem;
+}
+aside p {
+  text-align: left;
+  padding-left: 1rem;
+}
+
+#p-aside{
+  width: 40rem;
+  margin: auto;
+  text-align: center;
+}
+
+
+
+#square {
+  position: relative;
+  left: -35rem;
+  height: 14rem;
+  width: 25rem;
+}
+
+h3 {
+  padding-top: 2.5rem;
+  font-size: 1.5rem;
+  text-align: left;
+  padding-left: 1rem;
+}
+
+
+
+#icon-img1 {
+  position: relative;
+  left: -44rem;
+  top: 2rem;
+  z-index: 1;
+}
+
+#square2 {
+  position: relative;
+  left: -1rem;
+  height: 14rem;
+  width: 25rem;
+  top: -20rem;
+}
+
+#icon-img2 {
+  position: relative;
+  left: -9.5rem;
+  top: -18rem;
+  z-index: 1;
+  
+}
+
+#square3 {
+  position: relative;
+  left: 33rem;
+  height: 14rem;
+  width: 25rem;
+  top: -40rem;
+}
+
+#icon-img3 {
+  position: relative;
+  left: 24rem;
+  top: -37.5rem;
+  z-index: 1;
+}
+
+
+#boost{
+  margin-top: -37rem;
+  background-image: url('/assets/images/bg-boost-desktop.svg');
+  background-position-x: 100%;
+  width: 98.2%;
+}
+
+
+h4 {
+  font-size: 2rem;
+}
+
+#start2 {
+  position: relative;
+  top: -2.7rem;
+  left: 0.2rem;
+  z-index: 1;
+  padding: 0.7rem 1.5rem;
+}
+
+
+footer{
+  position: relative;
+  margin: auto;
+ max-width: 110rem;
+  margin-top: -27rem;
+  background-color: #232127;
+  height: 30rem;
+ 
+}
+
+footer img{
+ position: relative;
+ left: -38rem;
+ top: 6.6rem;
+}
+
+#features{
+  position: relative;
+  left: -11rem;
+    top: 2rem;
+ 
+}
+
+#resources{
+  position: relative;
+  left: 4rem;
+  top: -10.4rem;
+}
+#company{
+  position: relative;
+  left: 18rem;
+  top: -22.8rem;
+}
+
+#social-medias{
+  padding-inline: 47rem;
+  position: relative;
+  left: 73rem;
+  top: -45rem;
+}
+
+footer ul li a:hover{
+  color: var(--button-color);
 }
 
 }

@@ -18,23 +18,24 @@
         <div class="bar" id="bar2"></div>
         <div class="bar" id="bar3"></div>
         </div>
-     
-          <nav class="nav" id="nav">
-              <ul>
-                <div id="desktop-menu">
-                  <li><a href="#">Features</a></li>
-                  <li><a href="#">Pricing</a></li>
-                  <li><a href="#">Resources</a></li>
-                </div>
-                <div id="line"></div>
-                <div id="login">
-                  <li><a href="#">Login</a></li>
-                  <button id="sign-up">Sign Up</button>
-                </div>
-              </ul>
-     
+        <div id="myModal" class="modal">
+          <div class="close" onclick="closeModal()">&times;</div>
+            <nav class="nav" id="nav">
+                <ul>
+                  <div id="desktop-menu">
+                    <li><a href="#">Features</a></li>
+                    <li><a href="#">Pricing</a></li>
+                    <li><a href="#">Resources</a></li>
+                  </div>
+                  <div id="line"></div>
+                  <div id="login">
+                    <li><a href="#">Login</a></li>
+                    <button id="sign-up">Sign Up</button>
+                  </div>
+                </ul>
+          </div>
+                </nav>
         </div>
-      </nav>
         <div id="menu-bg" class="menu-bg"></div>
       <section>
         <img id="working-img"
@@ -61,7 +62,7 @@
           statistics dashboard.
         </p>
      
-          <div class="icon-img"><img  src="assets/images/icon-brand-recognition.svg" alt="Grafic" /></div>
+          <div class="icon-img" id="icon-img1"><img  src="assets/images/icon-brand-recognition.svg" alt="Grafic" /></div>
           <div id="square">
           <h3>Brand Recognition</h3>
           <p>
@@ -70,7 +71,7 @@
           </p>
         </div>
      
-          <div class="icon-img"><img src="assets/images/icon-detailed-records.svg" alt="" /></div>
+          <div class="icon-img" id="icon-img2"><img src="assets/images/icon-detailed-records.svg" alt="" /></div>
           <div id="square2">
           <h3>Detailed Records</h3>
           <p>
@@ -80,7 +81,7 @@
         </div>
      
         <div>
-          <div class="icon-img"><img src="assets/images/icon-fully-customizable.svg" alt="" /></div>
+          <div class="icon-img" id="icon-img3"><img src="assets/images/icon-fully-customizable.svg" alt="" /></div>
           <div id="square3">
             <h3>Fully Customizable</h3>
             <p>
@@ -99,19 +100,25 @@
     <footer>
       <img src="assets/images/logo.svg" alt="Logo" />
       <ul>
-        <h5>Features </h5>
-          <li><a href="#">Link Shortening</a></li>
-          <li><a href="#">Branded Links</a></li>
-          <li><a href="#">Analytics</a></li>
-        <h5>Resources</h5>
-          <li><a href="#">Blog</a></li>
-          <li><a href="#">Developers</a></li>
-          <li><a href="#">Support</a></li>
-        <h5>Company</h5>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Our Team</a></li>
-          <li><a href="#">Careers</a></li>
-          <li><a href="#">Contact</a></li>
+        <div id="features">
+          <h5>Features </h5>
+            <li><a href="#">Link Shortening</a></li>
+            <li><a href="#">Branded Links</a></li>
+            <li><a href="#">Analytics</a></li>
+        </div>
+        <div id="resources"> 
+          <h5>Resources</h5>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Developers</a></li>
+            <li><a href="#">Support</a></li>
+        </div>
+        <div id="company">
+          <h5>Company</h5>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Our Team</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Contact</a></li>
+        </div>
       </ul>
       <div id="social-medias">
         <a href="#"><img src="assets/images/icon-facebook.svg" alt="Facebook icon" /></a>
