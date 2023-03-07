@@ -36,6 +36,7 @@ body {
   top: 2rem;
   left: 2rem;
   width: 25%;
+  margin: auto;
 }
 
 /*HAMBURGUER MENU*/
@@ -46,8 +47,12 @@ nav {
   margin-bottom: 4rem;
 }
 
+#desktop-menu,
+#login {
+  display: none;
+}
+
 #menu {
- 
   border-radius: 1rem;
 }
 
@@ -62,18 +67,17 @@ nav {
   height: 100%;
   overflow: auto;
   background-color: rgba(0, 0, 0, 0.767);
+  margin: auto;
 }
 
 .close {
   color: white;
-  position: absolute;
+  position: relative;
   left: 13.5rem;
   top: 0.2rem;
   font-size: 3rem;
   font-weight: normal;
   display: flex;
-
-
 }
 
 .close:hover,
@@ -81,7 +85,6 @@ nav {
   color: #999;
   text-decoration: none;
   cursor: pointer;
-  
 }
 
 #menu-bar {
@@ -89,8 +92,9 @@ nav {
   height: 4rem;
 
   position: relative;
-  left: 14rem;
+  left: 7rem;
   top: 0.7rem;
+  margin: auto;
 }
 .bar {
   height: 0.15rem;
@@ -119,8 +123,9 @@ nav {
   width: 14rem;
   position: relative;
   top: 0rem;
-  left: -2.8rem;
+  left: 0.2rem;
   border-radius: 0.5rem;
+  margin: auto;
 }
 
 .nav ul {
@@ -144,10 +149,6 @@ nav {
 .nav li a:hover {
   color: var(--button-color);
 }
-
-
-
-
 
 #line {
   background-color: var(--footer-title-color);
@@ -188,6 +189,7 @@ button:hover {
   top: 4em;
   right: 0rem;
   z-index: -1;
+  margin: 0 auto;
 }
 
 section {
@@ -196,13 +198,14 @@ section {
 
 h1 {
   text-align: center;
-  margin: auto;
+
   position: absolute;
-  top: 17rem;
+
   z-index: -1;
   color: var(--title-color);
   font-weight: 700;
   line-height: 1.6rem;
+  margin: 11rem auto 0 auto;
 }
 
 section p {
@@ -213,13 +216,14 @@ section p {
   padding-right: 1rem;
   font-size: 0.9rem;
   z-index: -1;
+  margin: 0 auto;
 }
 
 .start-button {
   position: absolute;
   top: 26rem;
   left: 4rem;
-  margin-bottom: 2rem;
+  margin: 0 auto 2rem auto;
   padding-left: 2rem;
   padding-right: 2rem;
 }
@@ -231,16 +235,17 @@ input {
   width: 80%;
   height: 2rem;
   border-radius: 0.5rem;
+  margin: 0 auto;
 }
 
 #shorten-button {
   position: absolute;
   top: 35.5rem;
-  margin-bottom: 2rem;
   left: 1.9rem;
   border-radius: 0.2rem;
   padding: 0.5em 4.3rem;
   border-radius: 0.5rem;
+  margin: 0 auto 2rem auto;
 }
 
 #shorten-button:hover {
@@ -260,6 +265,7 @@ input {
   background-color: var(--back-menu-color);
   width: 16rem;
   height: 8rem;
+  margin: 0 auto;
 }
 
 aside {
@@ -273,14 +279,16 @@ aside {
 h2 {
   position: relative;
   padding-top: 5rem;
-  margin-top: 30rem;
+
   color: var(--title-color);
+  margin: 30rem auto 0 auto;
 }
 
 aside p {
   color: var(--text-color);
   font-size: 0.8rem;
   padding-top: 0.5rem;
+  margin: 0 auto;
 }
 
 .icon-img {
@@ -288,14 +296,14 @@ aside p {
   width: 5rem;
   padding: 1rem 0;
   border-radius: 50rem;
-  margin: auto;
-  margin-top: 2rem;
   position: relative;
   top: 2rem;
+  margin: 2rem auto 0 auto;
 }
 
 h3 {
   padding-top: 1rem;
+  margin: 0 auto;
 }
 
 #square,
@@ -306,6 +314,7 @@ h3 {
   border-radius: 0.3rem;
   padding-bottom: 1rem;
   margin-bottom: 1rem;
+  margin: 0 auto;
 }
 
 #boost {
@@ -316,16 +325,19 @@ h3 {
   background-position-y: 52%;
 
   background-color: var(--back-menu-color);
+  z-index: 0;
 }
 
 h4 {
   color: white;
   padding-top: 4rem;
   font-size: 1.1rem;
+  margin: 0 auto;
 }
 
 #start2 {
   top: 7rem;
+  margin: 0 auto;
 }
 
 footer {
@@ -333,20 +345,22 @@ footer {
   color: white;
   background-color: var(--back-footer-color);
   text-align: center;
+  margin-top: -0.5rem;
 }
 
 h5 {
   padding: 2rem 0 1rem 0;
   font-size: 1rem;
+  margin: 0 auto;
 }
 
 footer ul li {
   padding-bottom: 0.5rem;
   font-size: 0.9rem;
-
+  margin: 0 auto;
 }
 
-footer li{
+footer li {
   list-style: none;
 }
 
@@ -364,17 +378,18 @@ footer ul li a:hover {
   display: flex;
   align-items: center;
   justify-content: space-around;
+  margin: 0 auto;
 }
 /*//////////////////////////////*/
 
 @media (min-width: 360px) {
   #menu-bar {
-    left: 19.5rem;
+    left: 10.5rem;
     top: 0.5rem;
   }
 
   .nav {
-    width: 19.3rem;
+    width: 15.3rem;
   }
 
   #line {
@@ -386,11 +401,11 @@ footer ul li a:hover {
   }
 
   #working-img {
-    left: 3.2rem;
+    left: 2.7rem;
   }
 
   h1 {
-    margin-top: 5rem;
+    margin-top: 15rem;
   }
 
   section p {
@@ -416,13 +431,15 @@ footer ul li a:hover {
   }
 
   #start2 {
-    top: 4rem;
+    top: 6rem;
+    margin: auto;
+    left: 7rem;
   }
   aside {
-    width: 96%;
+    width: 100%;
   }
   footer {
-    width: 105%;
+    width: 100%;
   }
   input {
     left: 2.2rem;
@@ -430,14 +447,14 @@ footer ul li a:hover {
   #shorten-button {
     left: 2.2rem;
   }
-  .close{
+  .close {
     left: 19rem;
   }
 }
 
 @media (min-width: 375px) {
   .nav {
-    left: -2.9rem;
+    left: 0rem;
   }
 
   #working-img {
@@ -450,10 +467,10 @@ footer ul li a:hover {
   #shorten-button {
     left: 2rem;
   }
-.close{
-  left: 19rem;
+  .close {
+    left: 19rem;
     top: 0.3rem;
-}
+  }
   #square,
   #square2,
   #square3 {
@@ -490,11 +507,13 @@ footer ul li a:hover {
 }
 @media (min-width: 400px) {
   .nav {
-    left: -1.5rem;
+    left: 0.1rem;
   }
-
+  h1 {
+    margin-top: 15.5rem;
+  }
   #menu-bar {
-    left: 21.5rem;
+    left: 10.5rem;
   }
   #working-img {
     width: 90%;
@@ -511,42 +530,47 @@ footer ul li a:hover {
     left: 1.7rem;
   }
 
- 
+  #boost {
+    width: 26rem;
+  }
 
-#boost{
-  width: 26rem;
+  aside {
+    width: 26rem;
+  }
+  h1 {
+    left: 2.5rem;
+  }
+  .close {
+    left: 21rem;
+  }
 }
-
-aside {
-  width: 26rem;
-}
-h1{
-  left: 2.5rem;
-}
-.close {
-  left: 21rem;
-}
-  
-}
-
-
 
 /*///////////////////////////////////////////////////////*/
 
 @media (min-width: 700px) {
   .nav {
-    left: 18.8rem;
-    top: -1rem;
+    left: 0rem;
+    top: 0rem;
+    width: 30rem;
+    height: 20rem;
   }
-
+  .nav li a {
+    font-size: 1.2rem;
+  }
   #img-logo {
     top: 3rem;
     left: 4rem;
     width: 20%;
   }
-
+  .close {
+    left: 36rem;
+  }
+  #sign-up {
+    margin: auto;
+    left: 10rem;
+  }
   #menu-bar {
-    left: 42em;
+    left: 0em;
     top: 1rem;
     margin-right: 0;
     width: 6rem;
@@ -557,7 +581,7 @@ h1{
     left: 4.7rem;
   }
   h1 {
-    margin-top: 21rem;
+    margin-top: 31rem;
     left: 10rem;
     font-size: 2rem;
   }
@@ -624,8 +648,8 @@ h1{
   }
 
   #start2 {
-    top: 4rem;
-    left: 14.2rem;
+    top: 7rem;
+    left: 16.2rem;
     z-index: 1;
   }
   #start2:hover {
@@ -637,50 +661,36 @@ h1{
   }
 
   h5 {
-    
     font-size: 1.5rem;
   }
-  
+
   footer ul li {
-   
     font-size: 1.2rem;
   }
 }
 
-
-@media (min-width: 750px){
+@media (min-width: 750px) {
   #boost {
-    width: 47.9rem;
-}
-}
-
-@media (min-width: 800px){
-  .nav{
-  width: 27.3rem;
-    height: 20rem;
-    left: 11rem;
-    
-    
-}
-#sign-up {
-  left: 5.9rem;
-  font-size: 1.5rem;
+    width: 49.9rem;
+  }
 }
 
-.close {
+@media (min-width: 800px) {
+  .close {
     left: 41rem;
-}
+  }
 
-.nav li a{
-  font-size: 1.5rem;
-}
+  #working-img {
+    width: 90%;
+    left: 0.9rem;
+  }
 
   .shorten-link {
-  width: 45rem;
-  margin-top: 20rem;
-  margin: auto;
-  position: relative;
-  top: 41rem;
+    width: 45rem;
+    margin-top: 20rem;
+    margin: auto;
+    position: relative;
+    top: 41rem;
   }
 
   input {
@@ -689,195 +699,211 @@ h1{
     /* margin: auto; */
     left: 4.2rem;
     width: 42rem;
-}
+  }
 
-#shorten-button {
-  top: 30.5rem;
-  position: relative;
-  width: 42rem;
-  left: 4.2rem;
-}
+  #shorten-button {
+    top: 30.5rem;
+    position: relative;
+    width: 42rem;
+    left: 4.2rem;
+  }
 
-.start-button {
-  position: relative;
-  left: 14rem;
-  top: 39rem;
-}
+  .start-button {
+    position: relative;
+    left: 14rem;
+    top: 39rem;
+  }
 
-h1 {
-  margin-top: 24rem;
-  left: 12rem;
-}
+  h1 {
+    margin-top: 34rem;
+    left: 12rem;
+  }
 
-section p {
-  top: 43rem;
-  
-  margin: 2rem 3rem;}
+  section p {
+    top: 43rem;
+
+    margin: 2rem 3rem;
+  }
 
   aside {
-    top: -4rem;}
-
+    top: -4rem;
+  }
 
   #boost {
     background-position-x: 98%;
     background-position-y: 18%;
 
-
     width: 49.9rem;
+  }
+
+  #start2 {
+    top: 0rem;
+    left: 0.2rem;
+  }
+
+  footer {
+    margin-top: -4.2rem;
+  }
 }
 
-#start2 {
-  top: -2rem;
-  left: 0.2rem;
-}
+@media (min-width: 900px) {
+  /*NAV*/
 
-footer {
-  margin-top: -4.2rem;
-}
+  body {
+    background-color: black;
+    z-index: -2;
+  }
 
-}
+  main {
+    background: white;
+    margin: auto;
+    width: 110rem;
+    z-index: -2;
+    height: 147rem;
+  }
 
-
-
-@media (min-width: 900px){
-/*NAV*/
-  #img-logo{
-    top: 6rem;
-    left: 20rem;
+  #img-logo {
+    top: 5.5rem;
+    left: 10rem;
     width: 8rem;
   }
 
-  #desktop-menu{
-    display: flex;
-    gap: 2.5rem;
-    position: relative;
-    top: 1rem;
-    left: 22rem;
-  }
-
-  .nav{
+  #desktop-menu {
     display: block;
-    background-color: transparent;
-    
-   
   }
 
-  .nav ul li a{ 
-    color: var(--title-color);
+  #desktop-menu ul {
+    display: flex;
+    gap: 3rem;
+    position: relative;
+    top: 3rem;
+    left: 23rem;
+    width: 30rem;
+  }
+
+  .nav {
+    display: block;
+    margin: auto;
+    background-color: transparent;
+  }
+  li {
+    list-style: none;
+  }
+  a {
+    text-decoration: none;
+    color: var(--text-color);
     font-size: 1.2rem;
     font-weight: 700;
-    
-  
   }
 
-  .modal{
-
-    background-color: transparent;
-    
+  a:hover {
+    color: var(--button-color);
   }
 
-  #login{
+  .modal {
+    display: none;
+  }
+
+  #login {
     display: flex;
     position: relative;
-    top: -4.1rem;
-    left: 71rem;
-    
+    top: -1.1rem;
+    left: 84rem;
+    margin: 0;
+    width: 27rem;
   }
 
   #sign-up {
     padding: 0.5rem 2rem;
     left: -2rem;
-    
+    margin: auto;
   }
 
-  #menu-bar{
+  #menu-bar {
     display: none;
   }
 
 
+/*section*/
 
-  /*section*/
-
-  #working-img {
-    position: relative;
-    width: 45rem;
-    left: 80.5rem;
-    top: 10rem;
+#working-img {
+  width: 45rem;
+  left: 65rem;
+  top: 10rem;
+  z-index: 1;
 }
 
-h1{
+h1 {
   position: relative;
-  
-
-  top: -41rem;
+  top: -27rem;
   font-size: 6rem;
   width: 50rem;
   line-height: 6rem;
-  left: -18.5rem;
+  left: -19.5rem;
   text-align: left;
- 
+  z-index: 2;
 }
 
-
-section p{
+section p {
+  margin: auto;
   position: relative;
-  top: -40rem;
+  top: -27rem;
   font-size: 1.8rem;
   width: 45rem;
   text-align: left;
-  left: 19rem;
-  }
-
-  .start-button {
-    position: relative;
-    top: -43.5rem;
-    font-size: 1.6rem;
-    padding: 1.2rem 3rem;
-    left: 16rem;
+  left: -22rem;
+  z-index: 2;
 }
 
-
-
+.start-button {
+  margin: auto;
+  position: relative;
+  top: -24.5rem;
+  font-size: 1.6rem;
+  padding: 1.2rem 3rem;
+  left: 10rem;
+}
 
 .shorten-link {
-  
   position: relative;
   width: 90rem;
   height: 12rem;
-  margin-top: -80rem;
+  margin-top: -58rem;
   left: 1rem;
-  background-image: url('/assets/images/bg-boost-desktop.svg');
- 
+  background-image: url(/assets/images/bg-boost-desktop.svg);
   background-position-x: 44%;
   background-position-y: 109%;
+  z-index: 1;
 }
 
 input {
+  position: relative;
   top: 30rem;
-  left: 21rem;
+  left: 14rem;
   width: 70rem;
   height: 4rem;
+  z-index: 3;
 }
 
 #shorten-button {
   top: 30rem;
   width: 12rem;
   position: relative;
-  left: 22.9rem;
+  left: 13.9rem;
   padding: 1.5rem 0rem;
+  z-index: 3;
 }
 
-aside{
-  top: -2rem;
-  z-index: -1;
+aside {
+  top: -19rem;
+  z-index: 0;
   width: 100%;
   height: 87rem;
 }
-h2{
+h2 {
   padding-top: 9rem;
   font-size: 3rem;
 }
-
 
 #square {
   position: relative;
@@ -895,10 +921,10 @@ h2{
 
 #square2 {
   position: relative;
-    left: 1rem;
-    height: 16rem;
-    width: 25rem;
-    top: -17rem;
+  left: 1rem;
+  height: 16rem;
+  width: 25rem;
+  top: -17rem;
 }
 
 #icon-img2 {
@@ -906,7 +932,6 @@ h2{
   left: -7rem;
   top: -14rem;
   z-index: 1;
-  
 }
 
 #square3 {
@@ -924,16 +949,13 @@ h2{
   z-index: 1;
 }
 
-
-
 /*BOOST*/
 
-#boost{
+#boost {
   margin-top: -30rem;
-  background-image: url('/assets/images/bg-boost-desktop.svg');
+  background-image: url("/assets/images/bg-boost-desktop.svg");
   background-position-x: 100%;
   width: 100%;
- 
 }
 
 h4 {
@@ -942,152 +964,56 @@ h4 {
 
 #start2 {
   position: relative;
-  top: -2.7rem;
+  top: 0.3rem;
   left: 0.2rem;
   z-index: 2;
   padding: 0.7rem 1.5rem;
 }
 
-
-footer{
+footer {
   position: relative;
   width: 100%;
-  margin-top: -2rem;
+  margin-top: -19rem;
   background-color: #232127;
-  height: 30rem;
- 
+  height: 25rem;
 }
 
-footer img{
+footer img {
   position: relative;
   left: -38rem;
   top: 6.6rem;
- }
- 
- #features{
-   position: relative;
-   left: 38rem;
-     top: 2rem;
-     width: 15rem;
-  
- }
- 
- #resources{
-  position: relative;
-  right: -57rem;
-    top: -10.4rem;
-    width: 15rem;
 }
 
-#company{
+#features {
   position: relative;
-  right: -74rem;
+  left: 30rem;
+  top: 2rem;
+  width: 15rem;
+}
+
+#resources {
+  position: relative;
+  right: -48rem;
+  top: -10.4rem;
+  width: 15rem;
+}
+
+#company {
+  position: relative;
+  right: -64rem;
   top: -22.8rem;
   width: 15rem;
 }
 
-#social-medias{
-  display: none;
+#social-medias {
   position: relative;
   left: 73rem;
   top: -45rem;
-  width:20rem
+  width: 20rem;
 }
 
-footer ul li a:hover{
+footer ul li a:hover {
   color: var(--button-color);
- 
 }
-
-main{
-  height: 159rem;
-}
- /* 
-  
-main{
-  max-width: 110rem;
-  background-color:white;
-  margin: 0 auto;
-  z-index: -2;
-  height: 159rem;
-  
-}
-
-
-
-.myModal{
-  width: 10rem;
-}
-
-
-section{
-
-  
-  position: relative;
- 
-  z-index: 0;
-  max-width: 110rem ;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-h2 {
- 
-}
-aside p {
-  text-align: left;
-  padding-left: 1rem;
-}
-
-#p-aside{
-  width: 40rem;
-  margin: auto;
-  text-align: center;
-}
-
-
-
-
-
-h3 {
-  padding-top: 2.5rem;
-  font-size: 1.5rem;
-  text-align: left;
-  padding-left: 1rem;
-}
-
-
-
-
-
-
-
-
-
-
-#social-medias{
-  padding-inline: 47rem;
-  position: relative;
-  left: 73rem;
-  top: -45rem;
-}
-
-footer ul li a:hover{
-  color: var(--button-color);
-  width:20rem
-}
-
-*/
 
 }
