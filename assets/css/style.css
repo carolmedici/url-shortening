@@ -205,12 +205,12 @@ h1 {
   color: var(--title-color);
   font-weight: 700;
   line-height: 1.6rem;
-  margin: 11rem auto 0 auto;
+  margin: 9rem auto 0 auto;
 }
 
 section p {
   position: absolute;
-  top: 21rem;
+  top: 23rem;
   text-align: center;
   color: var(--text-color);
   padding-right: 1rem;
